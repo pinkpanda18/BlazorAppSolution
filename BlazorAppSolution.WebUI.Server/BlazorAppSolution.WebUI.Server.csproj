@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Components\Layout\bak\**" />
+    <Content Remove="Components\Layout\bak\**" />
+    <EmbeddedResource Remove="Components\Layout\bak\**" />
+    <None Remove="Components\Layout\bak\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorAppSolution.Infrastructure\BlazorAppSolution.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
